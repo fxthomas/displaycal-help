@@ -8,7 +8,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="Krita-colormanaged-workflow_text.svg"
+   sodipodi:docname="displaycal-colormanaged-workflow.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1252,7 +1252,7 @@
        width="1"
        height="1">
       <feColorMatrix
-         values="0.21 0.72 0.072 -0.03 0 0.21 0.72 0.072 -0.03 0 0.21 0.72 0.072 -0.03 0 0 0 0 1 0 "
+         values="0.20999999999999999 0.71999999999999997 0.071999999999999995 -0.029999999999999999 0 0.20999999999999999 0.71999999999999997 0.071999999999999995 -0.029999999999999999 0 0.20999999999999999 0.71999999999999997 0.071999999999999995 -0.029999999999999999 0 0 0 0 1 0"
          id="feColorMatrix12341" />
     </filter>
     <filter
@@ -1569,8 +1569,7 @@
     </g>
     <g
        id="g4277"
-       transform="matrix(0.80229282,0,0,0.80229282,585.60483,174.15167)"
-       style="filter:url(#filter12343)">
+       transform="matrix(0.80229282,0,0,0.80229282,585.60483,174.15167)">
       <path
          style="fill:#00e26c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 207.49805,454.51367 -91.14258,7.29102 -19.140626,87.49609 91.142576,29.16602 z m -13.92578,11.41992 -15,97.14258 -71.42969,-22.85742 15,-68.57031 z"

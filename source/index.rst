@@ -11,9 +11,9 @@ Welcome to DisplayCAL Documentation
    :caption: Getting Started
 
    intro
-   icc_profiles
    measurement_devices
    display_devices
+   profile_types
 
 .. toctree::
    :maxdepth: 2

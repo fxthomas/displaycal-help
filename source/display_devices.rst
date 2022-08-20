@@ -1,8 +1,20 @@
-Display devices
-===============
+Choosing a display
+==================
 
-RGB display technologies
-------------------------
+Display technologies
+--------------------
 
-Software and hardware quirks
-----------------------------
+Gamut coverage
+--------------
+
+White point
+-----------
+
+Luminance curves
+----------------
+
+Hardware controls
+-----------------
+
+Display dynamics: drift, ABL, etc.
+----------------------------------

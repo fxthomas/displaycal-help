@@ -1,2 +1,0 @@
-What are ICC Profiles?
-======================

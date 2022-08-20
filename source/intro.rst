@@ -1,39 +1,14 @@
 Introduction to DisplayCAL
 ==========================
 
-.. DisplayCAL_ is an open-source software that provides a user interface for measuring and
-.. characterizing various types of computer displays, including generation and management of ICC
-.. profiles, as well as generation of 3D LUTs compatible with video editing programs.
+DisplayCAL_ is an open-source software that provides a user interface for measuring and
+characterizing various types of computer displays, including generation and management of ICC
+profiles, as well as generation of 3D LUTs compatible with video editing programs.
 
-.. DisplayCAL is based on ArgyllCMS_, a collection of command-line tools with the more general purpose
-.. of characterizing all kinds of input and output devices capable of recording or producing colors,
-.. whether analog or digital (displays, cameras, printers, scanners, etc.), but you will in most cases
-.. not need to interact with ArgyllCMS directly.
-
-DisplayCAL_ (formerly known as dispcalGUI) is a display calibration and profiling solution with a
-focus on accuracy and versatility (in fact, the author is of the honest opinion it may be the most
-accurate and versatile ICC compatible display profiling solution available anywhere). At its core it
-relies on ArgyllCMS_, an advanced open source color management system, to take measurements, create
-calibrations and profiles, and for a variety of other advanced color related tasks.
-
-Calibrate and characterize your display devices using one of many supported measurement instruments,
-with support for multi-display setups and a variety of available options for advanced users, such as
-verification and reporting functionality to evaluate ICC profiles and display devices, creating
-video 3D LUTs, as well as optional CIECAM02 gamut mapping to take into account varying viewing
-conditions. Other features include:
-
-* Support of colorimeter corrections for different display device types to increase the absolute
-  accuracy of colorimeters. Corrections can be imported from vendor software or created from
-  measurements if a spectrometer is available.
-
-* Check display device uniformity via measurements.
-
-* Test chart editor: Create charts with any amount and composition of color patches, easy copy &
-  paste from CGATS, CSV files (only tab-delimited) and spreadsheet applications, for profile
-  verification and evaluation.
-
-* Create synthetic ICC profiles with custom primaries, white- and blackpoint as well as tone
-  response for use as working spaces or source profiles in device linking (3D LUT) transforms.
+DisplayCAL is based on ArgyllCMS_, a collection of command-line tools with the more general purpose
+of characterizing all kinds of input and output devices capable of recording or producing colors,
+whether analog or digital (displays, cameras, printers, scanners, etc.), but you will in most cases
+not need to interact with ArgyllCMS directly.
 
 .. figure:: _static/images/main-window.png
    :width: 600
@@ -70,10 +45,10 @@ A good introduction to color management is available in the `Krita documentation
 whether you need DisplayCAL, you should at least be familiar with the basic concepts explained here.
 
 
-How do display profiles work?
------------------------------
+How does DisplayCAL work?
+-------------------------
 
-To display an image or video proprely on a computer display, you need to know both how the display
+To display an image or video accurately on a computer display, you need to know both how the display
 behaves (the **display** or **target profile**) and how the image is supposed to be displayed (the
 **image** or **source profile**) in order to build a conversion (**link profile**) between the two:
 
@@ -109,10 +84,6 @@ displaying the image.
   a limited set of configuration options from their CMM.
 
 * Most programs are by default **color-unaware**, and will ignore both display and image profiles.
-
-
-Profiling, calibration, and 3DLUTs
-----------------------------------
 
 
 
