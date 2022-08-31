@@ -52,12 +52,12 @@ To display an image or video accurately on a computer display, you need to know 
 behaves (the **display** or **target profile**) and how the image is supposed to be displayed (the
 **image** or **source profile**) in order to build a conversion (**link profile**) between the two:
 
+* DisplayCAL and other profiling software are responsible for measuring the actual behavior of a
+  computer display into a display profile.
+
 * Images can optionally be tagged with their source profile, in most cases (though not always)
   representing an ideal display on which they are supposed to be displayed ; images with no tags
   usually assume sRGB_.
-
-* DisplayCAL and other profiling software are responsible for measuring the actual behavior of a
-  computer display into a display profile.
 
 .. figure:: _static/images/displaycal-colormanaged-workflow.svg
    :width: 600
