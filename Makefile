@@ -18,3 +18,10 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+watch:
+	inotifywait -mr -e modify -e move -e create -e delete "$(SOURCEDIR)" | while read line; do make html; done
+
+serve:
+	( sleep 1s; xdg-open http://0.0.0.0:8000/index.html )&
+	python -mhttp.server --directory build/html 8000
