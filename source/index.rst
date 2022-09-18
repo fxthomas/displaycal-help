@@ -36,3 +36,9 @@ Welcome to DisplayCAL Documentation
 
    synthetic_profiles
    profile_info
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Other resources
+
+   external_links
