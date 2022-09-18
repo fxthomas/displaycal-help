@@ -1,8 +1,10 @@
-Generating a simple display profile with a colorimeter
-======================================================
+Generating a simple display profile
+===================================
 
 Usage
 -----
 
 Required hardware
 -----------------
+
+* A colorimeter

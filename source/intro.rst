@@ -15,6 +15,22 @@ not need to interact with ArgyllCMS directly.
    :align: center
 
 
+What is this documentation for?
+-------------------------------
+
+I'm writing this documentation in the hopes that it may help newcomers understand how to use DisplayCAL more
+effectively.
+
+I'm targeting people who may not be fully familiar with all aspects of how display calibration works, with high-level
+explanations on what DisplayCAL aims to achieve, what kind of hardware is available and what tradeoffs are generally
+made when choosing a specific type of hardware, as well as step-by-step processes for achieving particular tasks with
+DisplayCAL.
+
+It is not at the moment a replacement for DisplayCAL's `reference documentation <https://displaycal.net>`_, and will not
+contain an exhaustive explanation of all settings and features. That may become a goal in the future, but is not a
+priority for me at the moment.
+
+
 Do I need DisplayCAL?
 ---------------------
 
@@ -40,56 +56,5 @@ usage once your eye is adapted to the display. A few exceptions exist, such as:
 * Ensuring rendering of a video follows a specific standard in order to perform
   color grading (e.g. Rec.1886_ with Rec.709_ primaries).
 
-A good introduction to color management is available in the `Krita documentation
-<https://docs.krita.org/en/general_concepts/colors/color_managed_workflow.html>`_. Before deciding
-whether you need DisplayCAL, you should at least be familiar with the basic concepts explained here.
-
-
-How does DisplayCAL work?
--------------------------
-
-To display an image or video accurately on a computer display, you need to know both how the display
-behaves (the **display** or **target profile**) and how the image is supposed to be displayed (the
-**image** or **source profile**) in order to build a conversion (**link profile**) between the two:
-
-* DisplayCAL and other profiling software are responsible for measuring the actual behavior of a
-  computer display into a display profile.
-
-* Images can optionally be tagged with their source profile, in most cases (though not always)
-  representing an ideal display on which they are supposed to be displayed ; images with no tags
-  usually assume sRGB_.
-
-.. figure:: _static/images/displaycal-colormanaged-workflow.svg
-   :width: 600
-   :align: center
-
-.. note::
-   In this context, we are talking about ICC profiles, but for completeness DisplayCAL also supports
-   generation of "3DLUT" (3D Look-Up Tables) files that can serve a similar role. These files are
-   generally in use for video production software.
-
-ICC profiles can be registered with the operating system (on both Windows and Linux), but the
-responsibility of actually retrieving and using them properly is entirely delegated to the program
-displaying the image.
-
-* Specialized graphics programs (Krita, Inkscape, GIMP, Darktable, Digikam, etc) are usually
-  **color-managed**. They can automatically pick up a registered display profile and provide various
-  options as to how an image should be rendered using both the image's internal profile and the
-  display profile using a **Color Management Module** (CMM).
-
-* Some general-purpose programs (e.g. Firefox, Gwenview, Chrome, the Windows Explorer and Photo
-  viewer,...) are **color-aware**, sometimes only partially. They are generally at least aware of
-  the image's internal profile, sometimes only for a subset of supported formats, but may ignore the
-  registered display profile (defaulting to a common ideal display profile such as sRGB_) or provide
-  a limited set of configuration options from their CMM.
-
-* Most programs are by default **color-unaware**, and will ignore both display and image profiles.
-
-
-
-
 .. _DisplayCAL: https://displaycal.net/
 .. _ArgyllCMS: http://argyllcms.com/
-.. _sRGB: https://en.wikipedia.org/wiki/SRGB
-.. _Rec.1886: https://en.wikipedia.org/wiki/ITU-R_BT.1886
-.. _Rec.709: https://en.wikipedia.org/wiki/Rec._709

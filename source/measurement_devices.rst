@@ -1,12 +1,14 @@
 Choosing a measurement device
 =============================
 
+Since DisplayCAL is all about measuring the display characteristics, we will need a measurement device.
+
 What are we looking for?
 ------------------------
 
-In order to build our display profile, we need to physically measure the **brightness** of the light
-emitted by the display and its **color**, when you, the user, give it any RGB value as an input. The
-profile will contain a summarized record of these measurements.
+In order to measure our display, we need to physically measure the **brightness** of the light emitted by the display
+and its **color**, when you, the user, give it any RGB value as an input. The profiles created by DisplayCAL will
+contain a summarized record of these measurements.
 
 Luckily for us, physicists and color scientists have come up with a common way of representing
 these: we only need **3 values: X, Y and Z**, which together form the CIE-XYZ_ space. The

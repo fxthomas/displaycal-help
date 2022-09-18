@@ -11,9 +11,9 @@ Welcome to DisplayCAL Documentation
    :caption: Getting Started
 
    intro
+   how_does_displaycal_work
    measurement_devices
    display_devices
-   profile_types
 
 .. toctree::
    :maxdepth: 2

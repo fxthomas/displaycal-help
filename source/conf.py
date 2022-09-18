@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'DisplayCAL Documentation'
-copyright = '2022, DisplayCAL Documentation Authors'
-author = 'DisplayCAL Documentation Authors'
+project = 'Using DisplayCAL effectively'
+copyright = '2022, François-Xavier Thomas'
+author = 'François-Xavier Thomas'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
