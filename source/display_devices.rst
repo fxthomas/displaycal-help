@@ -63,6 +63,10 @@ The intensity control of a given R, G or B channel never fully corresponds to th
 corresponding subpixel ; we say it's nonlinear_: when doubling the intensity control, the light intensity emitted by the
 pixel doesn't double but instead follows an arbitrary curve.
 
+.. note:: Taken together, primaries, white point and luminance curves can often form what is called a `color space
+   <https://en.wikipedia.org/wiki/Color_space>`_. For example, the sRGB_ primaries, white point (equal to D65_) and
+   curve define the sRGB_ color space.
+
 Nonlinearities and non-ideal behaviors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -164,3 +168,5 @@ other hand reduce the maximum luminance supported by the display.
 .. _display technologies: https://en.wikipedia.org/wiki/Comparison_of_display_technology
 .. _white point: https://en.wikipedia.org/wiki/White_point
 .. _CIE-xy: https://en.wikipedia.org/wiki/CIE_1931_color_space#CIE_xy_chromaticity_diagram_and_the_CIE_xyY_color_space
+.. _D65: https://en.wikipedia.org/wiki/Illuminant_D65
+.. _sRGB: https://en.wikipedia.org/wiki/SRGB
