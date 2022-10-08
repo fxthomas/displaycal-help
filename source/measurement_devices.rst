@@ -31,14 +31,46 @@ Colorimeters
 A colorimeter consists of 3 **color filters** and their associated sensors, that specifically target
 the parts of the light we need to measure X, Y and Z separately.
 
-Colorimeters generally have an advantage over other methods in terms of **price**, but also less
-intuitively in terms of **speed**: you can use much bigger, and therefore less noisy sensors when
-you only have 3 of them.
+.. note::
 
-On the other hand, colorimeters are generally **less accurate**.
+   For the curious, `X-Rite i1 Display PRO teardown <https://www.youtube.com/watch\?v\=QAwKOGSow-s>`_ shows the
+   various filters inside a very common colorimeter that is well-supported by DisplayCAL. `This page
+   <https://displaycalibrations.com/x-rite_i1_measurement_solutions_info.html>`_ contain more technical information
+   about the technical specifications of this specific model.
+
+Colorimeters generally have an advantage over other methods in terms of **price**, but also less
+intuitively in terms of **speed** (notably over spectrometers): you can use much bigger, and
+therefore less noisy sensors when you only have 3 of them.
+
+The biggest disadvantage of colorimeters is their **accuracy** if not enough care is given, since
+their filters never perfectly match CIE-XYZ. They're generally provided with a factory correction to
+compensate for that.
+
+.. note::
 
 Colorimeter corrections
 ~~~~~~~~~~~~~~~~~~~~~~~
+
+Colorimeters generally need an initial factory correction with an actual spectrometer to be considered
+accurate. Additionally, as the filters age and degrade over time, their spectral response change and
+they may require measurement of new corrections regularly.
+
+A poorly-corrected colorimeter will measure biased X, Y and Z values (due to metamerism_) for
+certain types of colors, and in particular:
+
+* The bias will be stronger for more **saturated colors**, resulting in perception mismatches.
+
+* Measurements on **different display technologies** (different LED types and spectra) will be
+  biased differently, making comparisons and accurate profiling very difficult or even
+  impossible.
+
+There are several types of corrections, with at least 2 being widely use in commercial colorimeters:
+
+* **Correction matrixes**
+* **Spectral measurements**
+
+Colorimeter technologies
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Examples of supported colorimeters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,3 +95,4 @@ Examples of supported spectrometers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _CIE-XYZ: https://en.wikipedia.org/wiki/CIE_1931_color_space
+.. _metamerism: https://en.wikipedia.org/wiki/Metamerism_(colorç)
